@@ -1,0 +1,909 @@
+{
+  "categories": [
+    {
+      "id": "hot-coffee",
+      "title": "بر پایه قهوه (گرم)",
+      "section": "hot",
+      "order": 1
+    },
+    {
+      "id": "hot-other",
+      "title": "سایر نوشیدنی‌های گرم",
+      "section": "hot",
+      "order": 2
+    },
+    { "id": "tea", "title": "چای و دمنوش", "section": "hot", "order": 3 },
+    {
+      "id": "cold-coffee",
+      "title": "بر پایه قهوه (سرد)",
+      "section": "cold",
+      "order": 4
+    },
+    { "id": "mocktail", "title": "ماکتل", "section": "cold", "order": 5 },
+    { "id": "shake", "title": "شیک", "section": "cold", "order": 6 },
+    {
+      "id": "smoothie",
+      "title": "اسموتی (فصلی)",
+      "section": "cold",
+      "order": 7
+    },
+    { "id": "cake", "title": "کیک", "section": "cold", "order": 8 },
+    { "id": "appetizer", "title": "پیش غذا", "section": "food", "order": 9 },
+    { "id": "pizza", "title": "پیتزا", "section": "food", "order": 10 },
+    { "id": "burger", "title": "برگر", "section": "food", "order": 11 },
+    { "id": "pasta", "title": "پاستا", "section": "food", "order": 12 },
+    { "id": "hookah", "title": "قلیان", "section": "hookah", "order": 13 }
+  ],
+  "menuItems": [
+    {
+      "id": "mi-001",
+      "categoryId": "hot-coffee",
+      "name": "اسپرسو",
+      "nameEn": "Espresso",
+      "description": "",
+      "basePrice": 90000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 38000,
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            { "id": "c0", "label": "سینگل", "priceDelta": 0 },
+            { "id": "c1", "label": "دبل", "priceDelta": 25000 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mi-002",
+      "categoryId": "hot-coffee",
+      "name": "کاپوچینو",
+      "nameEn": "Cappuccino",
+      "description": "",
+      "basePrice": 105000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 44000,
+      "optionGroups": [
+        {
+          "title": "نوع",
+          "required": true,
+          "choices": [
+            { "id": "c0", "label": "کلاسیک", "priceDelta": 0 },
+            { "id": "c1", "label": "شیرین", "priceDelta": 0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mi-003",
+      "categoryId": "hot-coffee",
+      "name": "آمریکانو",
+      "nameEn": "Americano",
+      "description": "",
+      "basePrice": 95000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 40000,
+      "optionGroups": [
+        {
+          "title": "نوع",
+          "required": true,
+          "choices": [
+            { "id": "c0", "label": "کلاسیک", "priceDelta": 0 },
+            { "id": "c1", "label": "شیرین", "priceDelta": 0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mi-004",
+      "categoryId": "hot-coffee",
+      "name": "لاته",
+      "nameEn": "Latte",
+      "description": "",
+      "basePrice": 110000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 46000,
+      "optionGroups": [
+        {
+          "title": "نوع",
+          "required": true,
+          "choices": [
+            { "id": "c0", "label": "کلاسیک", "priceDelta": 0 },
+            { "id": "c1", "label": "شیرین", "priceDelta": 0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mi-005",
+      "categoryId": "hot-coffee",
+      "name": "موکا",
+      "nameEn": "Mocha",
+      "description": "",
+      "basePrice": 125000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 53000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-006",
+      "categoryId": "hot-coffee",
+      "name": "رومانو",
+      "nameEn": "Romano",
+      "description": "",
+      "basePrice": 100000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 42000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-007",
+      "categoryId": "hot-coffee",
+      "name": "V60",
+      "nameEn": "V60",
+      "description": "لاین ۱۰۰٪ عربیکا و ترکیب ۸۰/۲۰ ربوستا",
+      "basePrice": 135000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 57000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-008",
+      "categoryId": "hot-other",
+      "name": "چاکلت",
+      "nameEn": "Hot Chocolate",
+      "description": "",
+      "basePrice": 115000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 48000,
+      "optionGroups": [
+        {
+          "title": "طعم",
+          "required": true,
+          "choices": [
+            { "id": "c0", "label": "نرمال", "priceDelta": 0 },
+            { "id": "c1", "label": "وایت", "priceDelta": 0 },
+            { "id": "c2", "label": "پینک", "priceDelta": 0 },
+            { "id": "c3", "label": "پسته", "priceDelta": 15000 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mi-009",
+      "categoryId": "tea",
+      "name": "چای",
+      "nameEn": "Tea",
+      "description": "",
+      "basePrice": 65000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 27000,
+      "optionGroups": [
+        {
+          "title": "طعم",
+          "required": true,
+          "choices": [
+            { "id": "c0", "label": "زعفران", "priceDelta": 0 },
+            { "id": "c1", "label": "دارچین", "priceDelta": 0 },
+            { "id": "c2", "label": "مراکشی", "priceDelta": 0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mi-010",
+      "categoryId": "tea",
+      "name": "ماسالا",
+      "nameEn": "Masala",
+      "description": "",
+      "basePrice": 90000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 38000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-011",
+      "categoryId": "tea",
+      "name": "کَرَک",
+      "nameEn": "Karak",
+      "description": "",
+      "basePrice": 90000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 38000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-012",
+      "categoryId": "tea",
+      "name": "دمنوش سرماخوردگی",
+      "nameEn": "Herbal Tea - Cold Relief",
+      "description": "",
+      "basePrice": 80000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 34000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-013",
+      "categoryId": "tea",
+      "name": "دمنوش آرام‌بخش",
+      "nameEn": "Herbal Tea - Calming",
+      "description": "",
+      "basePrice": 80000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 34000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-014",
+      "categoryId": "tea",
+      "name": "دمنوش انرژی‌بخش",
+      "nameEn": "Herbal Tea - Energizing",
+      "description": "",
+      "basePrice": 80000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 34000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-015",
+      "categoryId": "cold-coffee",
+      "name": "آیس آمریکانو",
+      "nameEn": "Iced Americano",
+      "description": "",
+      "basePrice": 105000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 44000,
+      "optionGroups": [
+        {
+          "title": "نوع",
+          "required": true,
+          "choices": [
+            { "id": "c0", "label": "کلاسیک", "priceDelta": 0 },
+            { "id": "c1", "label": "شیرین", "priceDelta": 0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mi-016",
+      "categoryId": "cold-coffee",
+      "name": "آیس لاته",
+      "nameEn": "Iced Latte",
+      "description": "",
+      "basePrice": 120000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 50000,
+      "optionGroups": [
+        {
+          "title": "نوع",
+          "required": true,
+          "choices": [
+            { "id": "c0", "label": "کلاسیک", "priceDelta": 0 },
+            { "id": "c1", "label": "شیرین", "priceDelta": 0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mi-017",
+      "categoryId": "cold-coffee",
+      "name": "آیس موکا",
+      "nameEn": "Iced Mocha",
+      "description": "",
+      "basePrice": 135000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 57000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-018",
+      "categoryId": "cold-coffee",
+      "name": "آیس رومانو",
+      "nameEn": "Iced Romano",
+      "description": "",
+      "basePrice": 110000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 46000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-019",
+      "categoryId": "cold-coffee",
+      "name": "آفوگاتو",
+      "nameEn": "Affogato",
+      "description": "",
+      "basePrice": 130000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 55000,
+      "optionGroups": [
+        {
+          "title": "طعم بستنی",
+          "required": true,
+          "choices": [
+            { "id": "c0", "label": "وانیل", "priceDelta": 0 },
+            { "id": "c1", "label": "وانیل پسته", "priceDelta": 15000 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mi-020",
+      "categoryId": "cold-coffee",
+      "name": "کلد برو",
+      "nameEn": "Cold Brew",
+      "description": "",
+      "basePrice": 115000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 48000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-021",
+      "categoryId": "mocktail",
+      "name": "اسپایسی مود",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 145000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 61000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-022",
+      "categoryId": "mocktail",
+      "name": "دارک کرش",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 145000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 61000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-023",
+      "categoryId": "mocktail",
+      "name": "کلاد درینک",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 140000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 59000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-024",
+      "categoryId": "mocktail",
+      "name": "پلام تانگو",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 145000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 61000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-025",
+      "categoryId": "mocktail",
+      "name": "پالینگو",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 140000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 59000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-026",
+      "categoryId": "mocktail",
+      "name": "موهیتو",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 130000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 55000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-027",
+      "categoryId": "mocktail",
+      "name": "کوبانو",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 140000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 59000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-028",
+      "categoryId": "mocktail",
+      "name": "انبه شلیل",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 165000,
+      "seasonal": true,
+      "available": true,
+      "costPrice": 69000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-029",
+      "categoryId": "mocktail",
+      "name": "انبه بلوبری",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 165000,
+      "seasonal": true,
+      "available": true,
+      "costPrice": 69000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-030",
+      "categoryId": "shake",
+      "name": "شیک وانیل",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 145000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 61000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-031",
+      "categoryId": "shake",
+      "name": "شیک شکلات گردو",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 155000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 65000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-032",
+      "categoryId": "shake",
+      "name": "شیک شکلات",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 145000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 61000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-033",
+      "categoryId": "shake",
+      "name": "شیک زعفران پسته",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 165000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 69000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-034",
+      "categoryId": "shake",
+      "name": "شیک نوتلا",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 160000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 67000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-035",
+      "categoryId": "shake",
+      "name": "شیک موز توت‌فرنگی",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 150000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 63000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-036",
+      "categoryId": "shake",
+      "name": "شیک لوتوس",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 160000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 67000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-037",
+      "categoryId": "shake",
+      "name": "شیک کره بادام‌زمینی",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 155000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 65000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-038",
+      "categoryId": "shake",
+      "name": "شیک اورئو",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 150000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 63000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-039",
+      "categoryId": "shake",
+      "name": "شیک پسته",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 165000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 69000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-040",
+      "categoryId": "shake",
+      "name": "شیک اسپرسو",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 150000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 63000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-041",
+      "categoryId": "shake",
+      "name": "شیک انبه",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 165000,
+      "seasonal": true,
+      "available": true,
+      "costPrice": 69000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-042",
+      "categoryId": "smoothie",
+      "name": "اسموتی انبه شلیل",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 140000,
+      "seasonal": true,
+      "available": true,
+      "costPrice": 59000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-043",
+      "categoryId": "smoothie",
+      "name": "اسموتی سیب شلیل",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 135000,
+      "seasonal": true,
+      "available": true,
+      "costPrice": 57000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-044",
+      "categoryId": "smoothie",
+      "name": "آب انبه",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 120000,
+      "seasonal": true,
+      "available": true,
+      "costPrice": 50000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-045",
+      "categoryId": "smoothie",
+      "name": "شیر انبه",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 130000,
+      "seasonal": true,
+      "available": true,
+      "costPrice": 55000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-046",
+      "categoryId": "smoothie",
+      "name": "اسموتی سیب پرتقال",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 130000,
+      "seasonal": true,
+      "available": true,
+      "costPrice": 55000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-047",
+      "categoryId": "cake",
+      "name": "کیک سه شیر",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 115000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 48000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-048",
+      "categoryId": "cake",
+      "name": "کیک شکلات",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 110000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 46000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-049",
+      "categoryId": "cake",
+      "name": "جار کیک",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 135000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 57000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-050",
+      "categoryId": "cake",
+      "name": "کیک زعفران",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 120000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 50000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-051",
+      "categoryId": "cake",
+      "name": "کیک عسل روسی",
+      "nameEn": "",
+      "description": "",
+      "basePrice": 120000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 50000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-052",
+      "categoryId": "appetizer",
+      "name": "سیب زمینی",
+      "nameEn": "French Fries",
+      "description": "",
+      "basePrice": 95000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 40000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-053",
+      "categoryId": "appetizer",
+      "name": "سیب زمینی پنیری",
+      "nameEn": "French Fries with Cheese",
+      "description": "",
+      "basePrice": 120000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 50000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-054",
+      "categoryId": "appetizer",
+      "name": "سالاد سزار",
+      "nameEn": "Caesar Salad",
+      "description": "",
+      "basePrice": 165000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 69000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-055",
+      "categoryId": "pizza",
+      "name": "پیتزا مرغ و گوشت",
+      "nameEn": "Mixed Chicken & Beef Pizza",
+      "description": "",
+      "basePrice": 320000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 134000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-056",
+      "categoryId": "pizza",
+      "name": "پیتزا گوشت",
+      "nameEn": "Beef Pizza",
+      "description": "",
+      "basePrice": 300000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 126000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-057",
+      "categoryId": "pizza",
+      "name": "پیتزا مرغ",
+      "nameEn": "Chicken Pizza",
+      "description": "",
+      "basePrice": 280000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 118000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-058",
+      "categoryId": "pizza",
+      "name": "پیتزا پپرونی",
+      "nameEn": "Pepperoni Pizza",
+      "description": "",
+      "basePrice": 300000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 126000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-059",
+      "categoryId": "burger",
+      "name": "چیکن برگر",
+      "nameEn": "Chicken Burger",
+      "description": "",
+      "basePrice": 195000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 82000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-060",
+      "categoryId": "burger",
+      "name": "برگر",
+      "nameEn": "Classic / Cheese Burger",
+      "description": "",
+      "basePrice": 175000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 74000,
+      "optionGroups": [
+        {
+          "title": "نوع",
+          "required": true,
+          "choices": [
+            { "id": "c0", "label": "کلاسیک", "priceDelta": 0 },
+            { "id": "c1", "label": "چیز برگر", "priceDelta": 15000 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mi-061",
+      "categoryId": "pasta",
+      "name": "پاستا بیف آلفردو",
+      "nameEn": "Pulled Beef Alfredo",
+      "description": "",
+      "basePrice": 245000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 103000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-062",
+      "categoryId": "pasta",
+      "name": "پاستا چیکن آلفردو",
+      "nameEn": "Chicken Alfredo",
+      "description": "",
+      "basePrice": 230000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 97000,
+      "optionGroups": []
+    },
+    {
+      "id": "mi-063",
+      "categoryId": "hookah",
+      "name": "قلیان",
+      "nameEn": "Hookah",
+      "description": "",
+      "basePrice": 230000,
+      "seasonal": false,
+      "available": true,
+      "costPrice": 97000,
+      "optionGroups": [
+        {
+          "title": "طعم",
+          "required": true,
+          "choices": [
+            { "id": "c0", "label": "بسکویت", "priceDelta": 0 },
+            { "id": "c1", "label": "شب‌های مسکو", "priceDelta": 0 },
+            { "id": "c2", "label": "آدامس کوهی", "priceDelta": 0 },
+            { "id": "c3", "label": "دو سیب", "priceDelta": 0 },
+            { "id": "c4", "label": "دو سیب آلبالو", "priceDelta": 0 },
+            { "id": "c5", "label": "نعناع پرتقال", "priceDelta": 0 },
+            { "id": "c6", "label": "نعناع یخ", "priceDelta": 0 },
+            { "id": "c7", "label": "نعناع انگور", "priceDelta": 0 },
+            { "id": "c8", "label": "تمشک بستنی", "priceDelta": 0 },
+            { "id": "c9", "label": "لاو", "priceDelta": 0 },
+            { "id": "c10", "label": "لیمو زرد", "priceDelta": 0 },
+            { "id": "c11", "label": "لیمو سبز", "priceDelta": 0 },
+            { "id": "c12", "label": "انار", "priceDelta": 0 },
+            { "id": "c13", "label": "انبه", "priceDelta": 0 }
+          ]
+        }
+      ]
+    }
+  ]
+}

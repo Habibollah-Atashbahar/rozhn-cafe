@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@import "@fontsource-variable/vazirmatn/wght.css";
+
+@theme {
+  --font-sans: "Vazirmatn Variable", "Yekan", "Tahoma", ui-sans-serif, system-ui, sans-serif;
+
+  /* پالت رنگی برند روژن: سفید استخوانی / مشکی / خاکستری */
+  --color-bone-50: #fdfbf7;
+  --color-bone-100: #f8f4ea;
+  --color-bone-200: #f0e9d8;
+  --color-bone-300: #e4d9bf;
+  --color-bone-400: #d3c5a3;
+
+  --color-ink-950: #0f0e0c;
+  --color-ink-900: #17140f;
+  --color-ink-800: #221f19;
+  --color-ink-700: #322d25;
+  --color-ink-600: #453f34;
+
+  --color-graphite-50: #f5f4f2;
+  --color-graphite-100: #eae8e4;
+  --color-graphite-200: #d6d3cb;
+  --color-graphite-300: #bab5a9;
+  --color-graphite-400: #97917f;
+  --color-graphite-500: #78725f;
+  --color-graphite-600: #5f5a4a;
+  --color-graphite-700: #4a4638;
+
+  --radius-card: 1rem;
+  --shadow-soft: 0 2px 20px -4px rgb(15 14 12 / 0.08);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-bone-50);
+    color: var(--color-ink-900);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01" on, "cv01" on;
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background-color: var(--color-ink-900);
+    color: var(--color-bone-50);
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-graphite-300) transparent;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

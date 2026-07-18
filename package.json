@@ -1,0 +1,36 @@
+{
+  "name": "rozhn-cafe-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fontsource-variable/vazirmatn": "5.2.8",
+    "@vercel/kv": "^3.0.0",
+    "clsx": "2.1.1",
+    "lucide-react": "1.24.0",
+    "next": "16.2.10",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "recharts": "3.9.2",
+    "swr": "2.4.2",
+    "tailwind-merge": "3.6.0",
+    "zod": "4.4.3",
+    "zustand": "5.0.14"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.2",
+    "@types/node": "24.6.0",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.2.10",
+    "postcss": "8.5.17",
+    "tailwindcss": "4.3.2",
+    "typescript": "5.9.3"
+  }
+}
