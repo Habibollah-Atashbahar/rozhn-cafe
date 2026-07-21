@@ -12,5 +12,6 @@ export function useMenu() {
     menuItems: menuItems.data ?? [],
     isLoading: categories.isLoading || menuItems.isLoading,
     isError: categories.error || menuItems.error,
+    refreshMenuItems: menuItems.mutate,
   };
 }

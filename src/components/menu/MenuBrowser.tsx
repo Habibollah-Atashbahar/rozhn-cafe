@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useMenu } from "@/lib/hooks/useMenu";
 import CategoryNav from "./CategoryNav";
 import MenuSection from "./MenuSection";
+import StaffPicks from "./StaffPicks";
 
 export default function MenuBrowser() {
   const { categories, menuItems, isLoading, isError } = useMenu();
@@ -61,6 +62,7 @@ export default function MenuBrowser() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <StaffPicks items={menuItems} />
       <CategoryNav categories={categories} activeId={displayActiveId} onSelect={scrollToCategory} />
       <div>
         {categories.map((category) => (

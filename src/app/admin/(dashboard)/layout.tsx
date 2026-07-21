@@ -2,13 +2,15 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { LayoutDashboard, ListOrdered, LogOut } from "lucide-react";
+import { LayoutDashboard, ListOrdered, LogOut, MessageSquareText, UtensilsCrossed } from "lucide-react";
 import Logo from "@/components/layout/Logo";
 import { cn } from "@/lib/utils";
 
 const NAV = [
   { href: "/admin", label: "داشبورد", icon: LayoutDashboard },
   { href: "/admin/orders", label: "سفارش‌ها", icon: ListOrdered },
+  { href: "/admin/menu", label: "محصولات", icon: UtensilsCrossed },
+  { href: "/admin/reviews", label: "نظرات", icon: MessageSquareText },
 ];
 
 export default function AdminDashboardLayout({ children }: { children: React.ReactNode }) {

@@ -11,6 +11,7 @@ import { toPersianDigits } from "@/lib/utils";
 
 const NAV_LINKS = [
   { href: "/", label: "منو و سفارش" },
+  { href: "/reviews", label: "نظرات مشتریان" },
   { href: "/about", label: "درباره ما" },
   { href: "/contact", label: "تماس با ما" },
   { href: "/developers", label: "تیم توسعه" },

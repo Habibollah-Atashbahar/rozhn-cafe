@@ -1,23 +1,23 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getAllOrders, saveAllOrders } from "@/lib/ordersStore";
-import type { CreateOrderPayload, Order } from "@/types";
+import type { OrderStatus } from "@/types";
 
-export async function POST(request: NextRequest) {
-  const payload: CreateOrderPayload = await request.json();
+export async function PATCH(
+  request: NextRequest,
+  { params }: { params: Promise<{ id: string }> }
+) {
+  const { id } = await params;
+  const { status }: { status: OrderStatus } = await request.json();
+
   const orders = await getAllOrders();
+  const index = orders.findIndex((o) => o.id === id);
 
-  const newOrder: Order = {
-    customerName: payload.customerName,
-    phone: payload.phone,
-    items: payload.items,
-    totalAmount: payload.totalAmount,
-    status: "pending",
-    createdAt: new Date().toISOString(),
-    id: `ord-${Date.now()}`,
-  };
+  if (index === -1) {
+    return NextResponse.json({ message: "سفارش پیدا نشد" }, { status: 404 });
+  }
 
-  orders.push(newOrder);
+  orders[index] = { ...orders[index]!, status };
   await saveAllOrders(orders);
 
-  return NextResponse.json(newOrder, { status: 201 });
+  return NextResponse.json(orders[index]);
 }

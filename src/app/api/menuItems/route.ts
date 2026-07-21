@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
-import seed from "@/data/menu-seed.json";
+import { getAllMenuItems } from "@/lib/menuStore";
 
 export async function GET() {
-  return NextResponse.json(seed.menuItems);
+  const items = await getAllMenuItems();
+  return NextResponse.json(items);
 }

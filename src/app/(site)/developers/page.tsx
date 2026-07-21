@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { name } from "next/dist/server/ci-info";
 
 export const metadata: Metadata = {
   title: "درباره تیم توسعه",

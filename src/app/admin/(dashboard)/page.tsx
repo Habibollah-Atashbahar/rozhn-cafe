@@ -88,9 +88,6 @@ export default function AdminDashboardPage() {
           <OrdersTable orders={orders.slice(0, 6)} onChanged={refresh} />
         )}
       </div>
-      <p className="rounded-card border border-dashed border-graphite-300 bg-bone-50 p-4 text-[11px] leading-6 text-graphite-500">
-        در فایل db.json درست میشه
-      </p>{" "}
     </div>
   );
 }

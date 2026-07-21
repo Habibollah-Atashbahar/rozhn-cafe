@@ -12,27 +12,72 @@
       "section": "hot",
       "order": 2
     },
-    { "id": "tea", "title": "چای و دمنوش", "section": "hot", "order": 3 },
+    {
+      "id": "tea",
+      "title": "چای و دمنوش",
+      "section": "hot",
+      "order": 3
+    },
     {
       "id": "cold-coffee",
       "title": "بر پایه قهوه (سرد)",
       "section": "cold",
       "order": 4
     },
-    { "id": "mocktail", "title": "ماکتل", "section": "cold", "order": 5 },
-    { "id": "shake", "title": "شیک", "section": "cold", "order": 6 },
+    {
+      "id": "mocktail",
+      "title": "ماکتل",
+      "section": "cold",
+      "order": 5
+    },
+    {
+      "id": "shake",
+      "title": "شیک",
+      "section": "cold",
+      "order": 6
+    },
     {
       "id": "smoothie",
       "title": "اسموتی (فصلی)",
       "section": "cold",
       "order": 7
     },
-    { "id": "cake", "title": "کیک", "section": "cold", "order": 8 },
-    { "id": "appetizer", "title": "پیش غذا", "section": "food", "order": 9 },
-    { "id": "pizza", "title": "پیتزا", "section": "food", "order": 10 },
-    { "id": "burger", "title": "برگر", "section": "food", "order": 11 },
-    { "id": "pasta", "title": "پاستا", "section": "food", "order": 12 },
-    { "id": "hookah", "title": "قلیان", "section": "hookah", "order": 13 }
+    {
+      "id": "cake",
+      "title": "کیک",
+      "section": "cold",
+      "order": 8
+    },
+    {
+      "id": "appetizer",
+      "title": "پیش غذا",
+      "section": "food",
+      "order": 9
+    },
+    {
+      "id": "pizza",
+      "title": "پیتزا",
+      "section": "food",
+      "order": 10
+    },
+    {
+      "id": "burger",
+      "title": "برگر",
+      "section": "food",
+      "order": 11
+    },
+    {
+      "id": "pasta",
+      "title": "پاستا",
+      "section": "food",
+      "order": 12
+    },
+    {
+      "id": "hookah",
+      "title": "قلیان",
+      "section": "hookah",
+      "order": 13
+    }
   ],
   "menuItems": [
     {
@@ -40,7 +85,7 @@
       "categoryId": "hot-coffee",
       "name": "اسپرسو",
       "nameEn": "Espresso",
-      "description": "",
+      "description": "دانه قهوه تازه‌آسیاب، استخراج غلیظ و بدون افزودنی",
       "basePrice": 90000,
       "seasonal": false,
       "available": true,
@@ -50,18 +95,27 @@
           "title": "حجم",
           "required": true,
           "choices": [
-            { "id": "c0", "label": "سینگل", "priceDelta": 0 },
-            { "id": "c1", "label": "دبل", "priceDelta": 25000 }
+            {
+              "id": "c0",
+              "label": "سینگل",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "دبل",
+              "priceDelta": 25000
+            }
           ]
         }
-      ]
+      ],
+      "staffPick": true
     },
     {
       "id": "mi-002",
       "categoryId": "hot-coffee",
       "name": "کاپوچینو",
       "nameEn": "Cappuccino",
-      "description": "",
+      "description": "اسپرسو، شیر بخاردیده و لایه‌ی فوم نرم روی آن",
       "basePrice": 105000,
       "seasonal": false,
       "available": true,
@@ -71,8 +125,16 @@
           "title": "نوع",
           "required": true,
           "choices": [
-            { "id": "c0", "label": "کلاسیک", "priceDelta": 0 },
-            { "id": "c1", "label": "شیرین", "priceDelta": 0 }
+            {
+              "id": "c0",
+              "label": "کلاسیک",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "شیرین",
+              "priceDelta": 0
+            }
           ]
         }
       ]
@@ -82,7 +144,7 @@
       "categoryId": "hot-coffee",
       "name": "آمریکانو",
       "nameEn": "Americano",
-      "description": "",
+      "description": "اسپرسو رقیق‌شده با آب داغ",
       "basePrice": 95000,
       "seasonal": false,
       "available": true,
@@ -92,8 +154,16 @@
           "title": "نوع",
           "required": true,
           "choices": [
-            { "id": "c0", "label": "کلاسیک", "priceDelta": 0 },
-            { "id": "c1", "label": "شیرین", "priceDelta": 0 }
+            {
+              "id": "c0",
+              "label": "کلاسیک",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "شیرین",
+              "priceDelta": 0
+            }
           ]
         }
       ]
@@ -103,7 +173,7 @@
       "categoryId": "hot-coffee",
       "name": "لاته",
       "nameEn": "Latte",
-      "description": "",
+      "description": "اسپرسو با شیر بخاردیده، بدون فوم غلیظ",
       "basePrice": 110000,
       "seasonal": false,
       "available": true,
@@ -113,42 +183,85 @@
           "title": "نوع",
           "required": true,
           "choices": [
-            { "id": "c0", "label": "کلاسیک", "priceDelta": 0 },
-            { "id": "c1", "label": "شیرین", "priceDelta": 0 }
+            {
+              "id": "c0",
+              "label": "کلاسیک",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "شیرین",
+              "priceDelta": 0
+            }
           ]
         }
-      ]
+      ],
+      "staffPick": true
     },
     {
       "id": "mi-005",
       "categoryId": "hot-coffee",
       "name": "موکا",
       "nameEn": "Mocha",
-      "description": "",
+      "description": "اسپرسو، شیر بخاردیده و شکلات تلخ ذوب‌شده",
       "basePrice": 125000,
       "seasonal": false,
       "available": true,
       "costPrice": 53000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "سینگل",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "دبل",
+              "priceDelta": 25000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-006",
       "categoryId": "hot-coffee",
       "name": "رومانو",
       "nameEn": "Romano",
-      "description": "",
+      "description": "اسپرسو با کف شیر بسیار نازک",
       "basePrice": 100000,
       "seasonal": false,
       "available": true,
       "costPrice": 42000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "سینگل",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "دبل",
+              "priceDelta": 25000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-007",
       "categoryId": "hot-coffee",
       "name": "V60",
       "nameEn": "V60",
-      "description": "لاین ۱۰۰٪ عربیکا و ترکیب ۸۰/۲۰ ربوستا",
+      "description": "قهوه دم‌کرده با روش پورآور و فیلتر کاغذی، طعمی شفاف و تمیز",
       "basePrice": 135000,
       "seasonal": false,
       "available": true,
@@ -160,7 +273,7 @@
       "categoryId": "hot-other",
       "name": "چاکلت",
       "nameEn": "Hot Chocolate",
-      "description": "",
+      "description": "شکلات داغ تهیه‌شده از شکلات ذوب‌شده و شیر",
       "basePrice": 115000,
       "seasonal": false,
       "available": true,
@@ -170,10 +283,26 @@
           "title": "طعم",
           "required": true,
           "choices": [
-            { "id": "c0", "label": "نرمال", "priceDelta": 0 },
-            { "id": "c1", "label": "وایت", "priceDelta": 0 },
-            { "id": "c2", "label": "پینک", "priceDelta": 0 },
-            { "id": "c3", "label": "پسته", "priceDelta": 15000 }
+            {
+              "id": "c0",
+              "label": "نرمال",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "وایت",
+              "priceDelta": 0
+            },
+            {
+              "id": "c2",
+              "label": "پینک",
+              "priceDelta": 0
+            },
+            {
+              "id": "c3",
+              "label": "پسته",
+              "priceDelta": 15000
+            }
           ]
         }
       ]
@@ -183,7 +312,7 @@
       "categoryId": "tea",
       "name": "چای",
       "nameEn": "Tea",
-      "description": "",
+      "description": "چای دم‌کش سیاه به همراه طعم انتخابی",
       "basePrice": 65000,
       "seasonal": false,
       "available": true,
@@ -193,9 +322,21 @@
           "title": "طعم",
           "required": true,
           "choices": [
-            { "id": "c0", "label": "زعفران", "priceDelta": 0 },
-            { "id": "c1", "label": "دارچین", "priceDelta": 0 },
-            { "id": "c2", "label": "مراکشی", "priceDelta": 0 }
+            {
+              "id": "c0",
+              "label": "زعفران",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "دارچین",
+              "priceDelta": 0
+            },
+            {
+              "id": "c2",
+              "label": "مراکشی",
+              "priceDelta": 0
+            }
           ]
         }
       ]
@@ -205,67 +346,152 @@
       "categoryId": "tea",
       "name": "ماسالا",
       "nameEn": "Masala",
-      "description": "",
+      "description": "چای ماسالا هندی با ادویه‌جات دارچین، هل و زنجبیل و شیر",
       "basePrice": 90000,
       "seasonal": false,
       "available": true,
       "costPrice": 38000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-011",
       "categoryId": "tea",
       "name": "کَرَک",
       "nameEn": "Karak",
-      "description": "",
+      "description": "چای شیر پررنگ شبه پاکستانی با شیر و شکر کاراملی",
       "basePrice": 90000,
       "seasonal": false,
       "available": true,
       "costPrice": 38000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-012",
       "categoryId": "tea",
       "name": "دمنوش سرماخوردگی",
       "nameEn": "Herbal Tea - Cold Relief",
-      "description": "",
+      "description": "دمنوش گیاهی با زنجبیل، دارچین و عسل برای سرماخوردگی",
       "basePrice": 80000,
       "seasonal": false,
       "available": true,
       "costPrice": 34000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-013",
       "categoryId": "tea",
       "name": "دمنوش آرام‌بخش",
       "nameEn": "Herbal Tea - Calming",
-      "description": "",
+      "description": "دمنوش گیاهان آرام‌بخش (بابونه، اسطوخودوس و نعناع)",
       "basePrice": 80000,
       "seasonal": false,
       "available": true,
       "costPrice": 34000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-014",
       "categoryId": "tea",
       "name": "دمنوش انرژی‌بخش",
       "nameEn": "Herbal Tea - Energizing",
-      "description": "",
+      "description": "دمنوش گیاهی با رزماری و لیمو برای انرژی و شادابی",
       "basePrice": 80000,
       "seasonal": false,
       "available": true,
       "costPrice": 34000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-015",
       "categoryId": "cold-coffee",
       "name": "آیس آمریکانو",
       "nameEn": "Iced Americano",
-      "description": "",
+      "description": "اسپرسو، آب سرد و یخ",
       "basePrice": 105000,
       "seasonal": false,
       "available": true,
@@ -275,8 +501,16 @@
           "title": "نوع",
           "required": true,
           "choices": [
-            { "id": "c0", "label": "کلاسیک", "priceDelta": 0 },
-            { "id": "c1", "label": "شیرین", "priceDelta": 0 }
+            {
+              "id": "c0",
+              "label": "کلاسیک",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "شیرین",
+              "priceDelta": 0
+            }
           ]
         }
       ]
@@ -286,7 +520,7 @@
       "categoryId": "cold-coffee",
       "name": "آیس لاته",
       "nameEn": "Iced Latte",
-      "description": "",
+      "description": "اسپرسو، شیر سرد و یخ",
       "basePrice": 120000,
       "seasonal": false,
       "available": true,
@@ -296,8 +530,16 @@
           "title": "نوع",
           "required": true,
           "choices": [
-            { "id": "c0", "label": "کلاسیک", "priceDelta": 0 },
-            { "id": "c1", "label": "شیرین", "priceDelta": 0 }
+            {
+              "id": "c0",
+              "label": "کلاسیک",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "شیرین",
+              "priceDelta": 0
+            }
           ]
         }
       ]
@@ -307,31 +549,65 @@
       "categoryId": "cold-coffee",
       "name": "آیس موکا",
       "nameEn": "Iced Mocha",
-      "description": "",
+      "description": "اسپرسو، شیر سرد، شکلات و یخ",
       "basePrice": 135000,
       "seasonal": false,
       "available": true,
       "costPrice": 57000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "سینگل",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "دبل",
+              "priceDelta": 25000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-018",
       "categoryId": "cold-coffee",
       "name": "آیس رومانو",
       "nameEn": "Iced Romano",
-      "description": "",
+      "description": "اسپرسو، یخ و کف شیر سرد بسیار نازک",
       "basePrice": 110000,
       "seasonal": false,
       "available": true,
       "costPrice": 46000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "سینگل",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "دبل",
+              "priceDelta": 25000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-019",
       "categoryId": "cold-coffee",
       "name": "آفوگاتو",
       "nameEn": "Affogato",
-      "description": "",
+      "description": "اسپرسو داغ روی یک اسکوپ بستنی",
       "basePrice": 130000,
       "seasonal": false,
       "available": true,
@@ -341,354 +617,824 @@
           "title": "طعم بستنی",
           "required": true,
           "choices": [
-            { "id": "c0", "label": "وانیل", "priceDelta": 0 },
-            { "id": "c1", "label": "وانیل پسته", "priceDelta": 15000 }
+            {
+              "id": "c0",
+              "label": "وانیل",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "وانیل پسته",
+              "priceDelta": 15000
+            }
           ]
         }
-      ]
+      ],
+      "staffPick": true
     },
     {
       "id": "mi-020",
       "categoryId": "cold-coffee",
       "name": "کلد برو",
       "nameEn": "Cold Brew",
-      "description": "",
+      "description": "قهوه دم‌سرد ۱۲ ساعته، طعمی ملایم و کم‌اسید",
       "basePrice": 115000,
       "seasonal": false,
       "available": true,
       "costPrice": 48000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-021",
       "categoryId": "mocktail",
       "name": "اسپایسی مود",
       "nameEn": "",
-      "description": "",
+      "description": "نوشیدنی تلخ‌وتند با رب انار، لیموترش و فلفل",
       "basePrice": 145000,
       "seasonal": false,
       "available": true,
       "costPrice": 61000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-022",
       "categoryId": "mocktail",
       "name": "دارک کرش",
       "nameEn": "",
-      "description": "",
+      "description": "میکس زغال‌اخته، لیموترش و شربت وانیل تیره",
       "basePrice": 145000,
       "seasonal": false,
       "available": true,
       "costPrice": 61000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-023",
       "categoryId": "mocktail",
       "name": "کلاد درینک",
       "nameEn": "",
-      "description": "",
+      "description": "ترکیب آبی‌رنگ از کیوری کوراسائو و لیموناد",
       "basePrice": 140000,
       "seasonal": false,
       "available": true,
       "costPrice": 59000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-024",
       "categoryId": "mocktail",
       "name": "پلام تانگو",
       "nameEn": "",
-      "description": "",
+      "description": "شربت آلو، لیموترش و نعناع تازه",
       "basePrice": 145000,
       "seasonal": false,
       "available": true,
       "costPrice": 61000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-025",
       "categoryId": "mocktail",
       "name": "پالینگو",
       "nameEn": "",
-      "description": "",
+      "description": "میکس هلو، پشن‌فروت و لیموناد",
       "basePrice": 140000,
       "seasonal": false,
       "available": true,
       "costPrice": 59000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-026",
       "categoryId": "mocktail",
       "name": "موهیتو",
       "nameEn": "",
-      "description": "",
+      "description": "نعناع تازه، لیموترش، سودا و شکر",
       "basePrice": 130000,
       "seasonal": false,
       "available": true,
       "costPrice": 55000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-027",
       "categoryId": "mocktail",
       "name": "کوبانو",
       "nameEn": "",
-      "description": "",
+      "description": "شربت آناناس و نارگیل با لیموترش",
       "basePrice": 140000,
       "seasonal": false,
       "available": true,
       "costPrice": 59000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-028",
       "categoryId": "mocktail",
       "name": "انبه شلیل",
       "nameEn": "",
-      "description": "",
+      "description": "پوره انبه، شلیل و آب‌لیمو",
       "basePrice": 165000,
       "seasonal": true,
       "available": true,
       "costPrice": 69000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-029",
       "categoryId": "mocktail",
       "name": "انبه بلوبری",
       "nameEn": "",
-      "description": "",
+      "description": "پوره انبه، بلوبری و سودا",
       "basePrice": 165000,
       "seasonal": true,
       "available": true,
       "costPrice": 69000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-030",
       "categoryId": "shake",
       "name": "شیک وانیل",
       "nameEn": "",
-      "description": "",
+      "description": "بستنی وانیل، شیر و شکر وانیلی، مخلوط‌شده تا بافت خامه‌ای",
       "basePrice": 145000,
       "seasonal": false,
       "available": true,
       "costPrice": 61000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-031",
       "categoryId": "shake",
       "name": "شیک شکلات گردو",
       "nameEn": "",
-      "description": "",
+      "description": "بستنی وانیل، شکلات و خرده گردو",
       "basePrice": 155000,
       "seasonal": false,
       "available": true,
       "costPrice": 65000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-032",
       "categoryId": "shake",
       "name": "شیک شکلات",
       "nameEn": "",
-      "description": "",
+      "description": "بستنی وانیل و شکلات ذوب‌شده",
       "basePrice": 145000,
       "seasonal": false,
       "available": true,
       "costPrice": 61000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-033",
       "categoryId": "shake",
       "name": "شیک زعفران پسته",
       "nameEn": "",
-      "description": "",
+      "description": "بستنی وانیل، رب زعفران و پسته خردشده",
       "basePrice": 165000,
       "seasonal": false,
       "available": true,
       "costPrice": 69000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ],
+      "staffPick": true
     },
     {
       "id": "mi-034",
       "categoryId": "shake",
       "name": "شیک نوتلا",
       "nameEn": "",
-      "description": "",
+      "description": "بستنی وانیل و شکلات نوتلا",
       "basePrice": 160000,
       "seasonal": false,
       "available": true,
       "costPrice": 67000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-035",
       "categoryId": "shake",
       "name": "شیک موز توت‌فرنگی",
       "nameEn": "",
-      "description": "",
+      "description": "بستنی وانیل، موز و توت‌فرنگی تازه",
       "basePrice": 150000,
       "seasonal": false,
       "available": true,
       "costPrice": 63000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-036",
       "categoryId": "shake",
       "name": "شیک لوتوس",
       "nameEn": "",
-      "description": "",
+      "description": "بستنی وانیل و شکلات لوتوس",
       "basePrice": 160000,
       "seasonal": false,
       "available": true,
       "costPrice": 67000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-037",
       "categoryId": "shake",
       "name": "شیک کره بادام‌زمینی",
       "nameEn": "",
-      "description": "",
+      "description": "بستنی وانیل و کره بادام‌زمینی",
       "basePrice": 155000,
       "seasonal": false,
       "available": true,
       "costPrice": 65000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-038",
       "categoryId": "shake",
       "name": "شیک اورئو",
       "nameEn": "",
-      "description": "",
+      "description": "بستنی وانیل و خرده بیسکویت اورئو",
       "basePrice": 150000,
       "seasonal": false,
       "available": true,
       "costPrice": 63000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-039",
       "categoryId": "shake",
       "name": "شیک پسته",
       "nameEn": "",
-      "description": "",
+      "description": "بستنی وانیل و پسته خردشده",
       "basePrice": 165000,
       "seasonal": false,
       "available": true,
       "costPrice": 69000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-040",
       "categoryId": "shake",
       "name": "شیک اسپرسو",
       "nameEn": "",
-      "description": "",
+      "description": "بستنی وانیل و شات اسپرسو",
       "basePrice": 150000,
       "seasonal": false,
       "available": true,
       "costPrice": 63000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-041",
       "categoryId": "shake",
       "name": "شیک انبه",
       "nameEn": "",
-      "description": "",
+      "description": "بستنی وانیل و پوره انبه",
       "basePrice": 165000,
       "seasonal": true,
       "available": true,
       "costPrice": 69000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-042",
       "categoryId": "smoothie",
       "name": "اسموتی انبه شلیل",
       "nameEn": "",
-      "description": "",
+      "description": "پوره انبه و شلیل با یخ",
       "basePrice": 140000,
       "seasonal": true,
       "available": true,
       "costPrice": 59000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-043",
       "categoryId": "smoothie",
       "name": "اسموتی سیب شلیل",
       "nameEn": "",
-      "description": "",
+      "description": "پوره سیب و شلیل با یخ",
       "basePrice": 135000,
       "seasonal": true,
       "available": true,
       "costPrice": 57000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-044",
       "categoryId": "smoothie",
       "name": "آب انبه",
       "nameEn": "",
-      "description": "",
+      "description": "آب‌میوه طبیعی انبه",
       "basePrice": 120000,
       "seasonal": true,
       "available": true,
       "costPrice": 50000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-045",
       "categoryId": "smoothie",
       "name": "شیر انبه",
       "nameEn": "",
-      "description": "",
+      "description": "پوره انبه و شیر",
       "basePrice": 130000,
       "seasonal": true,
       "available": true,
       "costPrice": 55000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-046",
       "categoryId": "smoothie",
       "name": "اسموتی سیب پرتقال",
       "nameEn": "",
-      "description": "",
+      "description": "پوره سیب و پرتقال",
       "basePrice": 130000,
       "seasonal": true,
       "available": true,
       "costPrice": 55000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "متوسط",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 30000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-047",
       "categoryId": "cake",
       "name": "کیک سه شیر",
       "nameEn": "",
-      "description": "",
+      "description": "کیک اسفنجی خیس‌خورده با سه نوع شیر و خامه",
       "basePrice": 115000,
       "seasonal": false,
       "available": true,
       "costPrice": 48000,
-      "optionGroups": []
+      "optionGroups": [],
+      "staffPick": true
     },
     {
       "id": "mi-048",
       "categoryId": "cake",
       "name": "کیک شکلات",
       "nameEn": "",
-      "description": "",
+      "description": "کیک اسفنجی شکلاتی با گاناش شکلات تلخ",
       "basePrice": 110000,
       "seasonal": false,
       "available": true,
@@ -700,7 +1446,7 @@
       "categoryId": "cake",
       "name": "جار کیک",
       "nameEn": "",
-      "description": "",
+      "description": "کیک لایه‌ای در ظرف شیشه‌ای با خامه و بیسکویت",
       "basePrice": 135000,
       "seasonal": false,
       "available": true,
@@ -712,7 +1458,7 @@
       "categoryId": "cake",
       "name": "کیک زعفران",
       "nameEn": "",
-      "description": "",
+      "description": "کیک اسفنجی با طعم زعفران و رشته‌های زعفران روی آن",
       "basePrice": 120000,
       "seasonal": false,
       "available": true,
@@ -724,7 +1470,7 @@
       "categoryId": "cake",
       "name": "کیک عسل روسی",
       "nameEn": "",
-      "description": "",
+      "description": "کیک روسی با لایه‌های عسل و خامه ترش",
       "basePrice": 120000,
       "seasonal": false,
       "available": true,
@@ -736,31 +1482,65 @@
       "categoryId": "appetizer",
       "name": "سیب زمینی",
       "nameEn": "French Fries",
-      "description": "",
+      "description": "سیب‌زمینی سرخ‌شده با ادویه مخصوص",
       "basePrice": 95000,
       "seasonal": false,
       "available": true,
       "costPrice": 40000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "سینگل",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "دبل",
+              "priceDelta": 45000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-053",
       "categoryId": "appetizer",
       "name": "سیب زمینی پنیری",
       "nameEn": "French Fries with Cheese",
-      "description": "",
+      "description": "سیب‌زمینی سرخ‌شده با پنیر پیتزا و سس مخصوص",
       "basePrice": 120000,
       "seasonal": false,
       "available": true,
       "costPrice": 50000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "سینگل",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "دبل",
+              "priceDelta": 45000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-054",
       "categoryId": "appetizer",
       "name": "سالاد سزار",
       "nameEn": "Caesar Salad",
-      "description": "",
+      "description": "کاهو، سینه مرغ گریل‌شده، پنیر پارمسان و سس سزار",
       "basePrice": 165000,
       "seasonal": false,
       "available": true,
@@ -772,67 +1552,173 @@
       "categoryId": "pizza",
       "name": "پیتزا مرغ و گوشت",
       "nameEn": "Mixed Chicken & Beef Pizza",
-      "description": "",
+      "description": "خمیر پیتزا، سس مخصوص، پنیر، مرغ و گوشت چرخ‌کرده",
       "basePrice": 320000,
       "seasonal": false,
       "available": true,
       "costPrice": 134000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "سایز",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "کوچک (۲۵ سانتی)",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "متوسط (۳۰ سانتی)",
+              "priceDelta": 60000
+            },
+            {
+              "id": "c2",
+              "label": "بزرگ (۳۵ سانتی)",
+              "priceDelta": 120000
+            }
+          ]
+        }
+      ],
+      "staffPick": true
     },
     {
       "id": "mi-056",
       "categoryId": "pizza",
       "name": "پیتزا گوشت",
       "nameEn": "Beef Pizza",
-      "description": "",
+      "description": "خمیر پیتزا، سس مخصوص، پنیر و گوشت چرخ‌کرده",
       "basePrice": 300000,
       "seasonal": false,
       "available": true,
       "costPrice": 126000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "سایز",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "کوچک (۲۵ سانتی)",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "متوسط (۳۰ سانتی)",
+              "priceDelta": 60000
+            },
+            {
+              "id": "c2",
+              "label": "بزرگ (۳۵ سانتی)",
+              "priceDelta": 120000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-057",
       "categoryId": "pizza",
       "name": "پیتزا مرغ",
       "nameEn": "Chicken Pizza",
-      "description": "",
+      "description": "خمیر پیتزا، سس مخصوص، پنیر و مرغ گریل‌شده",
       "basePrice": 280000,
       "seasonal": false,
       "available": true,
       "costPrice": 118000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "سایز",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "کوچک (۲۵ سانتی)",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "متوسط (۳۰ سانتی)",
+              "priceDelta": 60000
+            },
+            {
+              "id": "c2",
+              "label": "بزرگ (۳۵ سانتی)",
+              "priceDelta": 120000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-058",
       "categoryId": "pizza",
       "name": "پیتزا پپرونی",
       "nameEn": "Pepperoni Pizza",
-      "description": "",
+      "description": "خمیر پیتزا، سس مخصوص، پنیر موزارلا و پپرونی",
       "basePrice": 300000,
       "seasonal": false,
       "available": true,
       "costPrice": 126000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "سایز",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "کوچک (۲۵ سانتی)",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "متوسط (۳۰ سانتی)",
+              "priceDelta": 60000
+            },
+            {
+              "id": "c2",
+              "label": "بزرگ (۳۵ سانتی)",
+              "priceDelta": 120000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-059",
       "categoryId": "burger",
       "name": "چیکن برگر",
       "nameEn": "Chicken Burger",
-      "description": "",
+      "description": "نان برگر، فیله مرغ سوخاری، کاهو، گوجه و سس مخصوص",
       "basePrice": 195000,
       "seasonal": false,
       "available": true,
       "costPrice": 82000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "نوع",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "تکی",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "دوبل",
+              "priceDelta": 55000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-060",
       "categoryId": "burger",
       "name": "برگر",
       "nameEn": "Classic / Cheese Burger",
-      "description": "",
+      "description": "نان برگر، گوشت گوساله، کاهو، گوجه، خیارشور و سس مخصوص",
       "basePrice": 175000,
       "seasonal": false,
       "available": true,
@@ -842,42 +1728,85 @@
           "title": "نوع",
           "required": true,
           "choices": [
-            { "id": "c0", "label": "کلاسیک", "priceDelta": 0 },
-            { "id": "c1", "label": "چیز برگر", "priceDelta": 15000 }
+            {
+              "id": "c0",
+              "label": "کلاسیک",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "چیز برگر",
+              "priceDelta": 15000
+            }
           ]
         }
-      ]
+      ],
+      "staffPick": true
     },
     {
       "id": "mi-061",
       "categoryId": "pasta",
       "name": "پاستا بیف آلفردو",
       "nameEn": "Pulled Beef Alfredo",
-      "description": "",
+      "description": "پاستا پنه، گوشت گوساله و سس آلفردو خامه‌ای",
       "basePrice": 245000,
       "seasonal": false,
       "available": true,
       "costPrice": 103000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "نرمال",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 40000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-062",
       "categoryId": "pasta",
       "name": "پاستا چیکن آلفردو",
       "nameEn": "Chicken Alfredo",
-      "description": "",
+      "description": "پاستا پنه، سینه مرغ و سس آلفردو خامه‌ای",
       "basePrice": 230000,
       "seasonal": false,
       "available": true,
       "costPrice": 97000,
-      "optionGroups": []
+      "optionGroups": [
+        {
+          "title": "حجم",
+          "required": true,
+          "choices": [
+            {
+              "id": "c0",
+              "label": "نرمال",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "بزرگ",
+              "priceDelta": 40000
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mi-063",
       "categoryId": "hookah",
       "name": "قلیان",
       "nameEn": "Hookah",
-      "description": "",
+      "description": "تنباکو معطر با طعم انتخابی، سرو با ذغال طبیعی",
       "basePrice": 230000,
       "seasonal": false,
       "available": true,
@@ -887,20 +1816,76 @@
           "title": "طعم",
           "required": true,
           "choices": [
-            { "id": "c0", "label": "بسکویت", "priceDelta": 0 },
-            { "id": "c1", "label": "شب‌های مسکو", "priceDelta": 0 },
-            { "id": "c2", "label": "آدامس کوهی", "priceDelta": 0 },
-            { "id": "c3", "label": "دو سیب", "priceDelta": 0 },
-            { "id": "c4", "label": "دو سیب آلبالو", "priceDelta": 0 },
-            { "id": "c5", "label": "نعناع پرتقال", "priceDelta": 0 },
-            { "id": "c6", "label": "نعناع یخ", "priceDelta": 0 },
-            { "id": "c7", "label": "نعناع انگور", "priceDelta": 0 },
-            { "id": "c8", "label": "تمشک بستنی", "priceDelta": 0 },
-            { "id": "c9", "label": "لاو", "priceDelta": 0 },
-            { "id": "c10", "label": "لیمو زرد", "priceDelta": 0 },
-            { "id": "c11", "label": "لیمو سبز", "priceDelta": 0 },
-            { "id": "c12", "label": "انار", "priceDelta": 0 },
-            { "id": "c13", "label": "انبه", "priceDelta": 0 }
+            {
+              "id": "c0",
+              "label": "بسکویت",
+              "priceDelta": 0
+            },
+            {
+              "id": "c1",
+              "label": "شب‌های مسکو",
+              "priceDelta": 0
+            },
+            {
+              "id": "c2",
+              "label": "آدامس کوهی",
+              "priceDelta": 0
+            },
+            {
+              "id": "c3",
+              "label": "دو سیب",
+              "priceDelta": 0
+            },
+            {
+              "id": "c4",
+              "label": "دو سیب آلبالو",
+              "priceDelta": 0
+            },
+            {
+              "id": "c5",
+              "label": "نعناع پرتقال",
+              "priceDelta": 0
+            },
+            {
+              "id": "c6",
+              "label": "نعناع یخ",
+              "priceDelta": 0
+            },
+            {
+              "id": "c7",
+              "label": "نعناع انگور",
+              "priceDelta": 0
+            },
+            {
+              "id": "c8",
+              "label": "تمشک بستنی",
+              "priceDelta": 0
+            },
+            {
+              "id": "c9",
+              "label": "لاو",
+              "priceDelta": 0
+            },
+            {
+              "id": "c10",
+              "label": "لیمو زرد",
+              "priceDelta": 0
+            },
+            {
+              "id": "c11",
+              "label": "لیمو سبز",
+              "priceDelta": 0
+            },
+            {
+              "id": "c12",
+              "label": "انار",
+              "priceDelta": 0
+            },
+            {
+              "id": "c13",
+              "label": "انبه",
+              "priceDelta": 0
+            }
           ]
         }
       ]

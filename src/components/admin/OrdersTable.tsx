@@ -1,7 +1,7 @@
 "use client";
 
 import { Fragment, useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp, Cake } from "lucide-react";
 import type { Order, OrderStatus } from "@/types";
 import { formatToman, toPersianDigits } from "@/lib/utils";
 import { orderTotal } from "@/lib/adminStats";
@@ -17,6 +17,13 @@ const STATUS_OPTIONS: OrderStatus[] = [
 
 function itemCount(order: Order) {
   return order.items.reduce((sum, i) => sum + i.quantity, 0);
+}
+
+function isBirthdayToday(birthDate?: string) {
+  if (!birthDate) return false;
+  const b = new Date(birthDate);
+  const now = new Date();
+  return b.getMonth() === now.getMonth() && b.getDate() === now.getDate();
 }
 
 export default function OrdersTable({
@@ -46,14 +53,15 @@ export default function OrdersTable({
       <table className="w-full min-w-[760px] table-fixed text-sm">
         <thead>
           <tr className="border-b border-graphite-200 text-right text-xs text-graphite-500">
-            <th className="w-[18%] py-3 font-medium">مشتری</th>
-            <th className="w-[16%] py-3 font-medium">موبایل</th>
-            <th className="w-[12%] py-3 text-center font-medium">
+            <th className="w-[16%] py-3 font-medium">مشتری</th>
+            <th className="w-[14%] py-3 font-medium">موبایل</th>
+            <th className="w-[8%] py-3 text-center font-medium">میز</th>
+            <th className="w-[10%] py-3 text-center font-medium">
               تعداد اقلام
             </th>
-            <th className="w-[16%] py-3 font-medium">مبلغ</th>
-            <th className="w-[10%] py-3 font-medium">زمان</th>
-            <th className="w-[22%] py-3 font-medium">وضعیت</th>
+            <th className="w-[14%] py-3 font-medium">مبلغ</th>
+            <th className="w-[8%] py-3 font-medium">زمان</th>
+            <th className="w-[20%] py-3 font-medium">وضعیت</th>
             <th className="w-[6%] py-3 font-medium" />
           </tr>
         </thead>
@@ -64,10 +72,22 @@ export default function OrdersTable({
               <Fragment key={order.id}>
                 <tr className="border-b border-graphite-100 last:border-none">
                   <td className="truncate py-3 font-medium text-ink-900">
-                    {order.customerName}
+                    <span className="inline-flex items-center gap-1">
+                      {order.customerName}
+                      {isBirthdayToday(order.birthDate) && (
+                        <Cake
+                          size={14}
+                          className="text-pink-500"
+                          aria-label="تولد امروز مشتری است"
+                        />
+                      )}
+                    </span>
                   </td>
                   <td dir="ltr" className="py-3 text-left text-graphite-600">
                     {order.phone}
+                  </td>
+                  <td className="py-3 text-center font-medium text-ink-800">
+                    {toPersianDigits(order.tableNumber)}
                   </td>
                   <td className="py-3 text-center text-graphite-600">
                     {toPersianDigits(itemCount(order))}
@@ -118,7 +138,7 @@ export default function OrdersTable({
                 </tr>
                 {isOpen && (
                   <tr className="bg-bone-100/60">
-                    <td colSpan={7} className="px-3 py-4">
+                    <td colSpan={8} className="px-3 py-4">
                       <div className="grid gap-3 sm:grid-cols-2">
                         <div className="text-xs text-graphite-500">
                           <OrderStatusBadge status={order.status} />

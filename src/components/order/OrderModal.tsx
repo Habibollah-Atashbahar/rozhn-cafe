@@ -6,6 +6,8 @@ import { z } from "zod";
 import { cn, formatToman } from "@/lib/utils";
 import { useCartStore } from "@/lib/store/cartStore";
 import { api, ApiError } from "@/lib/api";
+import JalaliDateSelect from "./JalaliDateSelect";
+import { jalaliToGregorian } from "@/lib/jalali";
 
 const phoneSchema = z
   .string()
@@ -25,6 +27,12 @@ export default function OrderModal({
 
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  const [tableNumber, setTableNumber] = useState("");
+  const [birthDate, setBirthDate] = useState<{
+    year: number | null;
+    month: number | null;
+    day: number | null;
+  }>({ year: null, month: null, day: null });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -33,6 +41,8 @@ export default function OrderModal({
   function reset() {
     setName("");
     setPhone("");
+    setTableNumber("");
+    setBirthDate({ year: null, month: null, day: null });
     setErrors({});
     setSuccess(false);
     setServerError(null);
@@ -53,8 +63,20 @@ export default function OrderModal({
     if (!phoneResult.success)
       newErrors.phone = phoneResult.error.issues[0]!.message;
 
+    if (tableNumber.trim().length === 0)
+      newErrors.tableNumber = "شماره میز را وارد کنید";
+
     setErrors(newErrors);
     if (Object.keys(newErrors).length > 0) return;
+
+    const birthDateIso =
+      birthDate.year && birthDate.month && birthDate.day
+        ? jalaliToGregorian(
+            birthDate.year,
+            birthDate.month,
+            birthDate.day
+          ).toISOString()
+        : undefined;
 
     setSubmitting(true);
     setServerError(null);
@@ -62,6 +84,8 @@ export default function OrderModal({
       await api.createOrder({
         customerName: name.trim(),
         phone,
+        tableNumber: tableNumber.trim(),
+        birthDate: birthDateIso,
         items: lines.map((l) => ({
           itemId: l.itemId,
           name: l.name,
@@ -197,6 +221,35 @@ export default function OrderModal({
               {errors.phone && (
                 <p className="mt-1 text-[11px] text-red-500">{errors.phone}</p>
               )}
+            </div>
+
+            <div>
+              <label className="mb-1 block text-xs font-medium text-graphite-600">
+                شماره میز
+              </label>
+              <input
+                value={tableNumber}
+                onChange={(e) => setTableNumber(e.target.value)}
+                className={cn(
+                  "w-full rounded-lg border bg-white px-3 py-2.5 text-sm focus:outline-none",
+                  errors.tableNumber
+                    ? "border-red-400"
+                    : "border-graphite-200 focus:border-ink-900"
+                )}
+                placeholder="مثلاً ۴ یا میز کنار پنجره"
+              />
+              {errors.tableNumber && (
+                <p className="mt-1 text-[11px] text-red-500">
+                  {errors.tableNumber}
+                </p>
+              )}
+            </div>
+
+            <div>
+              <label className="mb-1 block text-xs font-medium text-graphite-600">
+                تاریخ تولد <span className="text-graphite-400">(اختیاری، برای ارسال پیام تبریک)</span>
+              </label>
+              <JalaliDateSelect value={birthDate} onChange={setBirthDate} />
             </div>
 
             {serverError && (

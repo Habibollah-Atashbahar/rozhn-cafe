@@ -55,18 +55,29 @@ export default function MenuItemCard({ item }: { item: MenuItem }) {
   return (
     <div className="flex flex-col gap-3 rounded-card border border-graphite-200/70 bg-white/60 p-4 shadow-soft transition-shadow hover:shadow-md">
       <div className="flex items-start justify-between gap-3">
-        <div>
-          <h3 className="font-semibold text-ink-900">
-            {item.name}
-            {item.seasonal && (
-              <span className="mr-2 rounded-full bg-bone-200 px-2 py-0.5 text-[10px] font-medium text-graphite-600 align-middle">
-                فصلی
-              </span>
-            )}
-          </h3>
-          {item.description && (
-            <p className="mt-1 text-xs leading-5 text-graphite-500">{item.description}</p>
+        <div className="flex items-start gap-3">
+          {item.image && (
+            /* eslint-disable-next-line @next/next/no-img-element */
+            <img
+              src={item.image}
+              alt={item.name}
+              className="h-16 w-16 shrink-0 rounded-xl object-cover"
+              loading="lazy"
+            />
           )}
+          <div>
+            <h3 className="font-semibold text-ink-900">
+              {item.name}
+              {item.seasonal && (
+                <span className="mr-2 rounded-full bg-bone-200 px-2 py-0.5 text-[10px] font-medium text-graphite-600 align-middle">
+                  فصلی
+                </span>
+              )}
+            </h3>
+            {item.description && (
+              <p className="mt-1 text-xs leading-5 text-graphite-500">{item.description}</p>
+            )}
+          </div>
         </div>
         <span className="whitespace-nowrap text-sm font-semibold text-ink-800">
           {formatToman(finalPrice)}
